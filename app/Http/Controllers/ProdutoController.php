@@ -16,10 +16,13 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-       $produtos = Produto::paginate(4);
-        return view('site.home' , compact('produtos'));
+         $produtos = Produto::paginate(4);
+         return view('site.home' , compact('produtos'));
+
+        
     }
 
+ 
     /**
      * Show the form for creating a new resource.
      */
